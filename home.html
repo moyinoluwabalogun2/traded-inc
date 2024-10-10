@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="contact-info">
+            <div><i class="fas fa-map-marker-alt"></i> 267 Park Avenue , lagos 90210</div>
+            <div><i class="fas fa-clock"></i> Mon - Sat: 9:00am-18:00pm. Sunday CLOSED</div>
+            <div><i class="fas fa-phone-alt"></i> +234805164628</div>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+        </div>
+    </div>
+    <div class="navbar">
+        <img src="traded inc logo.jpg" alt="Investment Smart Logo" width="150" height="200"/>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">CASES <i class="fas fa-chevron-down"></i></a>
+                <ul>
+                    <li><a href="#">Case 1</a></li>
+                    <li><a href="#">Case 2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">BLOG <i class="fas fa-chevron-down"></i></a>
+                <ul>
+                    <li><a href="#">Blog 1</a></li>
+                    <li><a href="#">Blog 2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">PAGES <i class="fas fa-chevron-down"></i></a>
+                <ul>
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+    </div>
+    <div class="hero">
+        <img src="taded bg.jpg" alt="City Skyline" width="980" height="500">
+        <div class="content">
+            <h1 id="hero-heading">Does Your Money Need Speed?</h1>
+            <p id="hero-subheading">Our company can assist you with any aspect of investment management</p>
+            <a class="btn" id="hero-btn" href="#">Get A Quote</a>
+        </div>
+        <div class="arrow arrow-left" onclick="prevHeading()">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="arrow arrow-right" onclick="nextHeading()">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+    <div class="containment">
+        <div class="title">Our Services</div>
+        <div class="services">
+            <div class="service">
+                <i class="fas fa-eye"></i>
+                <h3>Market Research</h3>
+                <div class="underline"></div>
+                <p>Assessment of viability, stability, and profitability of a business, sub-business or project.</p>
+            </div>
+            <div class="service highlight">
+                <i class="fas fa-handshake"></i>
+                <h3>Investment Management</h3>
+                <div class="underline"></div>
+                <p>Our Investment Management Services help you pursue your financial needs as they grow and change.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-users"></i>
+                <h3>Sales & Trading</h3>
+                <div class="underline"></div>
+                <p>This service offers a variety of benefits to boost your sales and suit your company's fixed income.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="contaner">
+        <div class="left-section">
+         <h1>
+          Why Clients Choose Us
+         </h1>
+         <div class="feature">
+          <i class="fas fa-user-tie">
+          </i>
+          <div>
+           <h3>
+            Competent Professionals
+           </h3>
+           <p>
+            We work in an atmosphere of trust and camaraderie, where partners help each other.
+           </p>
+          </div>
+         </div>
+         <div class="feature">
+          <i class="fas fa-trophy">
+          </i>
+          <div>
+           <h3>
+            Superior Service
+           </h3>
+           <p>
+            We are committed to providing clients with the best value and service in the industry.
+           </p>
+          </div>
+         </div>
+         <div class="feature">
+          <i class="fas fa-wallet">
+          </i>
+          <div>
+           <h3>
+            Competitive Pricing
+           </h3>
+           <p>
+            Providing value through straightforward commissions and added services.
+           </p>
+          </div>
+         </div>
+         <a class="appointment-btn" href="#">
+          Make An Appointment
+         </a>
+        </div>
+        <div class="right-section">
+         <div class="video-unavailable">
+          <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player">
+          </iframe>
+         </div>
+         <div class="quotte">
+          <p>
+           “Together, we can enable your business to achieve even more.”
+          </p>
+          <span>
+           Tradex Inc leads the industry in wealth management. Our independent RIA and broker services are powered by over 20 years of industry experience.
+          </span>
+         </div>
+        </div>
+       </div>
+       <div class="team-section">
+        <h2>
+         Meet Our Team
+        </h2>
+        <div class="team-container">
+         <div class="team-member">
+          <img alt="Portrait of Amanda Smith, Business Expert" height="250" src="https://storage.googleapis.com/a1aa/image/1uPtdIfSqRQtWSTa6ul5ZgEgptSifmGArLjFoci3QTKgfMKnA.jpg" width="250"/>
+          <div class="contact">
+           <p>
+            <i class="fas fa-phone">
+            </i>
+            +1 (409) 987-5874
+           </p>
+           <p>
+            <i class="fas fa-envelope">
+            </i>
+            info@demolink.org
+           </p>
+          </div>
+          <div class="info">
+           <h3>
+            chukwudi
+           </h3>
+           <p>
+            ceo
+           </p>
+          </div>
+         </div>
+         <div class="team-member">
+          <img alt="Portrait of John Doe, PR Manager" height="250" src="https://storage.googleapis.com/a1aa/image/zboduS7R1cJNPNez9lHIkFfU2n4N3beJFPtDw7hhL3Ef9ZUOB.jpg" width="250"/>
+          <div class="contact">
+           <p>
+            <i class="fas fa-phone">
+            </i>
+            +1 (409) 987-5874
+           </p>
+           <p>
+            <i class="fas fa-envelope">
+            </i>
+            info@demolink.org
+           </p>
+          </div>
+          <div class="info">
+           <h3>
+            Moyinoluwa
+           </h3>
+           <p>
+            software engineer
+           </p>
+          </div>
+         </div>
+         <div class="team-member">
+          <img alt="Portrait of Vanessa Ives, Marketing Expert" height="250" src="https://storage.googleapis.com/a1aa/image/ts6mjTyoz2IAEhFFzfSkb387Rx835H4X4L46Jf6Tge67eZUOB.jpg" width="250"/>
+          <div class="contact">
+           <p>
+            <i class="fas fa-phone">
+            </i>
+            +234 9152342836
+           </p>
+           <p>
+            <i class="fas fa-envelope">
+            </i>
+            info@demolink.org
+           </p>
+          </div>
+          <div class="info">
+           <h3>
+           Dunni
+           </h3>
+           <p>
+            Marketing Expert
+           </p>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="contaer">
+        <div class="overlayy"></div>
+        <div class="contet">
+            <h2>Facts and Numbers</h2>
+            <div class="facts">
+                <div class="fact">
+                    <i class="fas fa-handshake"></i>
+                    <h3 id="clients">0</h3>
+                    <p>Trusted Clients</p>
+                </div>
+                <div class="fact">
+                    <i class="fas fa-trophy"></i>
+                    <h3 id="awards">0</h3>
+                    <p>Awards</p>
+                </div>
+                <div class="fact">
+                    <i class="fas fa-running"></i>
+                    <h3 id="experience">0</h3>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="fact">
+                    <i class="fas fa-users"></i>
+                    <h3 id="experts">0</h3>
+                    <p>Experts</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="conter">
+        <div class="heder">
+            <h1>Investment Calculator</h1>
+        </div>
+        <div class="tabs">
+            <button class="tab">CONTRIBUTION AMOUNT</button>
+            <button class="tab inactive">STARTING AMOUNT</button>
+        </div>
+        <div class="results">
+            <p><strong>Results:</strong> You will need to contribute <span class="highlight" id="monthly-contribution">$0.00</span> at the end of each month to reach the target of $1,000,000.00.</p>
+        </div>
+        <div class="summary">
+            <p>End Balance: <span id="end-balance">$0.00</span></p>
+            <p>Total Interest: <span id="total-interest">$0.00</span></p>
+            <p>Total Principal: <span id="total-principal">$0.00</span></p>
+        </div>
+        <div class="fom">
+            <div class="fom-group">
+                <label for="target">Your Target ($)</label>
+                <input type="number" id="target" placeholder="1000000">
+            </div>
+            <div class="fom-group">
+                <label for="duration">Duration (years)</label>
+                <input type="number" id="duration" placeholder="15">
+            </div>
+        </div>
+        <div class="fom">
+            <div class="fom-group">
+                <label for="principal">Starting Principal ($)</label>
+                <input type="number" id="principal" placeholder="20000">
+            </div>
+            <div class="fom-group">
+                <label for="return">Average Return (%)</label>
+                <input type="number" id="return" placeholder="6">
+            </div>
+        </div>
+        <div class="fom">
+            <div class="fom-group">
+                <label for="invest">Invest at the end of each</label>
+                <select id="invest">
+                    <option value="month">Month</option>
+                    <option value="year">Year</option>
+                </select>
+            </div>
+        </div>
+        <div class="calculate-btn">
+            <button onclick="calculate()">Calculate <i class="fas fa-arrow-right"></i></button>
+        </div>
+        <div class="graph">
+            <p>Balance Accumulation Graph</p>
+        </div>
+    </div>
+    <button class="scroll-up" onclick="scrollToTop()">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    <div class="footer">
+        <div class="about-us">
+         <img alt="traded inc logo" height="50" src="traded inc logo.jpg" width="50"/>
+         <p>
+          Our company leads the industry in wealth management. We provide independent RIA and broker services that are powered by over 20 years of industry experience.
+         </p>
+         <a href="#">
+          Free Consultation
+          <i class="fas fa-arrow-right">
+          </i>
+         </a>
+        </div>
+        <div class="recent-posts">
+         <h3>
+          RECENT POSTS
+         </h3>
+         <div class="post">
+          <a href="#">
+           <img alt="Person analyzing a graph" height="50" src="https://storage.googleapis.com/a1aa/image/qakgdG8pAs69MJngKKBzmJOoIcCbEChLIXPFj0M85y4PoV5E.jpg" width="50"/>
+          </a>
+          <div>
+           <a href="#">
+            <p>
+             What’s the Right Asset Allocation For Investors?
+            </p>
+           </a>
+           <small>
+            Feb 4, 2018 / 3 Comments
+           </small>
+          </div>
+         </div>
+         <div class="post">
+          <a href="#">
+           <img alt="Person discussing with another person" height="50" src="https://storage.googleapis.com/a1aa/image/qTorvXufY0SPRiDR9fBcQVoWZj9YdRJuXX8wE7mjaCc9gWlTA.jpg" width="50"/>
+          </a>
+          <div>
+           <a href="#">
+            <p>
+             How Return Assumptions Affect Investor Behavior
+            </p>
+           </a>
+           <small>
+            Feb 4, 2018 / 3 Comments
+           </small>
+          </div>
+         </div>
+        </div>
+        <div class="contact-us">
+         <h3>
+          CONTACT US
+         </h3>
+         <ul>
+          <li>
+           <i class="fas fa-phone">
+           </i>
+           +1 (409) 987-5874
+          </li>
+          <li>
+           <i class="fas fa-envelope">
+           </i>
+           info@demolink.org
+          </li>
+          <li>
+           <i class="fas fa-map-marker-alt">
+           </i>
+           6036 fayokade street ikorodu,lagos
+          </li>
+         </ul>
+        </div>
+        <div class="bottom-bar">
+            <div class="leftie">
+                2024 © Investment Smart. <a href="#">Privacy Policy</a>
+            </div>
+            <div class="rightie">
+                <span>Follow Us:</span>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            </div>
+        </div>
+       </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,363 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image:url(https://img.freepik.com/free-photo/top-view-office-desk-with-growth-chart-coins_23-2148780621.jpg?uid=R162555620&ga=GA1.2.1730539877.1725887093&semt=ais_hybrid);
+    background-size: cover;
+      background-position: center;
+      max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 800px;
+    height: 90%;
+    max-height: 500px;
+    
+    background-image:url(https://img.freepik.com/free-photo/view-from-office-supplies-white-working-table-background_1421-588.jpg?uid=R162555620&ga=GA1.2.1730539877.1725887093&semt=ais_hybrid);
+    background-size: cover;
+      background-position: center;
+      
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+}
+.left, .right {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.left {
+    order: 2;
+}
+.right {
+    order: 1;
+    background: url('traded\ inc\ logo.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+}
+.left h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+.left p {
+    margin: 10px 0 20px;
+    color: #666;
+}
+.left label {
+    margin: 10px 0 5px;
+    color: #000000;
+    font-weight: 500;
+}
+.left input[type="text"], .left input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.left .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.left .checkbox-container input {
+    margin-right: 10px;
+}
+.left .checkbox-container label {
+    margin: 0;
+    color: rgb(16, 15, 15);
+}
+.left .forgot-password {
+    margin-left: auto;
+    color:blue;
+    text-decoration: none;
+}
+.left .forgot-password:hover {
+    text-decoration: underline;
+}
+.left .login-btn {
+    width: 90%;
+    padding: 10px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.left .login-btn:hover {
+    background-color: #2a6acb;
+}
+.left .signup {
+    text-align: center;
+    color: #666;
+}
+.left .signup a {
+    color: #3b82f6;
+    text-decoration: none;
+}
+.left .signup a:hover {
+    text-decoration: underline;
+}
+.left .or {
+    text-align: center;
+    margin: 20px 0;
+    color: #666;
+}
+.left .social-icons {
+    display: flex;
+    justify-content: center;
+}
+.left .social-icons i {
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #666;
+}
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+    .left {
+        order: 1;
+        padding: 40px;
+    }
+    .right {
+        order: 2;
+        padding: 40px;
+    }
+}
+
+
+
+
+
+
+.containerr {
+    display: flex;
+    background-image:url(https://img.freepik.com/free-photo/view-from-office-supplies-white-working-table-background_1421-588.jpg?uid=R162555620&ga=GA1.2.1730539877.1725887093&semt=ais_hybrid);
+    background-size: cover;
+      background-position: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 800px;
+    max-width: 100%;
+    flex-direction: column;
+
+}
+.leftt {
+    background: url('traded\ inc\ logo.jpg') no-repeat center center/cover;
+    padding: 40px;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    position: relative;
+    
+}
+.leftt::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px 0 0 15px;
+}
+.leftt h2 {
+    position: relative;
+    z-index: 1;
+    font-size: 36px;
+    text-align: center;
+}
+.rightt {
+    padding: 40px;
+    flex: 1;
+}
+.rightt h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+.form-group a {
+    color: #007BFF;
+    text-decoration: none;
+}
+.form-group a:hover {
+    text-decoration: underline;
+}
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn-primary {
+    background-color: #4A69BD;
+    color: white;
+    margin-bottom: 10px;
+}
+.btn-google {
+    background-color: white;
+    color: #757575;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-google img {
+    width: 20px;
+    margin-right: 10px;
+}
+.text-center {
+    text-align: center;
+    margin-top: 20px;
+}
+.text-center a {
+    color: #007BFF;
+    text-decoration: none;
+}
+.text-center a:hover {
+    text-decoration: underline;
+}
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+.form-row .form-group {
+    flex: 1;
+}
+.form-row .form-group:first-child {
+    margin-right: 20px;
+}
+.form-group-inline {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+    .containerr {
+        flex-direction: row;
+    }
+    .leftt {
+        order: 1;
+        padding: 40px;
+    }
+    .rightt {
+        order: 2;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .leftt h2 {
+        font-size: 24px;
+    }
+    .rightt h2 {
+        font-size: 20px;
+    }
+    .form-group input {
+        padding: 8px;
+    }
+    .btn {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+
+
+.accordion {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color:  #0b0b3b;
+}
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color:white;
+}
+.accordion-header:hover {
+    background-color: rgb(217, 222, 207)
+}
+.accordion-content {
+    display: none;
+    padding: 15px;
+    font-size: 14px;
+    color: #666;
+}
+.accordion-icon {
+    font-size: 18px;
+    color: #d4a017;
+}
+.accordion-icon.open {
+    transform: rotate(45deg);
+}
+@media (max-width: 600px) {
+    .accordion-header {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .accordion-content {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
