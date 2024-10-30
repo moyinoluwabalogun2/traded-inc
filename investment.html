@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>investment</title>
+    <link rel="stylesheet" href="investment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="hero">
+        <img alt="A close-up of a laptop keyboard and a tablet displaying a calendar and a pie chart" src="https://storage.googleapis.com/a1aa/image/1rSbk1aUeixiYSEhmhPf42XgG808vfU8T1jIbGaK6dvM2TSnA.jpg"/>
+        <div class="text">
+            Investment
+        </div>
+    </div>
+    <div class="containeer">
+        <div class="plans">
+            <div class="plan" id="gold-plan" onclick="selectPlan('gold')">
+                <h1>GOLD PLAN</h1>
+                <div class="container">
+                    120% <span>ROI</span>
+                </div>
+                <p>Daily for 30 Days</p>
+                <div class="investment">
+                    <div>
+                        <p>Min. Invest</p>
+                        <p>$500</p>
+                    </div>
+                    <div>
+                        <p>Max. Invest</p>
+                        <p>$5,000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="plan" id="silver-plan" onclick="selectPlan('silver')">
+                <h1>SILVER PLAN</h1>
+                <div class="container">
+                    80% <span>ROI</span>
+                </div>
+                <p>Daily for 30 Days</p>
+                <div class="investment">
+                    <div>
+                        <p>Min. Invest</p>
+                        <p>$100</p>
+                    </div>
+                    <div>
+                        <p>Max. Invest</p>
+                        <p>$500</p>
+                    </div>
+                </div>
+            </div>
+            <div class="plan" id="bronze-plan" onclick="selectPlan('bronze')">
+                <h1>BRONZE PLAN</h1>
+                <div class="container">
+                    50%<span>ROI</span>
+                </div>
+                <p>Daily for 30 Days</p>
+                <div class="investment">
+                    <div>
+                        <p>Min. Invest</p>
+                        <p>$20</p>
+                    </div>
+                    <div>
+                        <p>Max. Invest</p>
+                        <p>$100</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="investment-details">
+            <div class="choose-plan">
+                <h2>Choose Plan:</h2>
+                <div class="plans">
+                    <button class="active" id="gold-button" onclick="selectPlan('gold')">Gold Plan</button>
+                    <button id="silver-button" onclick="selectPlan('silver')">Silver Plan</button>
+                    <button id="bronze-button" onclick="selectPlan('bronze')">Bronze Plan</button>
+                </div>
+                <input type="number" id="investment-amount" value="3504" oninput="calculateProfit()" />
+                <p id="usd-amount">3504 USD</p>
+                <input type="range" class="slider" min="1" max="5000" value="3504" oninput="updateAmount(this.value)">
+            </div>
+            <div class="profit">
+                <div class="daily-profit">
+                    <h3>Daily Profit</h3>
+                    <p id="daily-profit">0.3 USD</p>
+                </div>
+                <div class="total-profit">
+                    <h3>Total Profit</h3>
+                    <p id="total-profit">13.5 USD</p>
+                </div>
+                <button>Invest Now <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="containeerr">
+        <h1>We Accept Payment Methods</h1>
+        <div class="payment-methods">
+            <div class="payment-method">
+                <i class="fab fa-bitcoin"></i>
+                <p>Bitcoin</p>
+            </div>
+            <div class="payment-method">
+                <i class="fab fa-ethereum"></i>
+                <p>Ethereum</p>
+            </div>
+            <div class="payment-method">
+                <i class="fab fa-paypal"></i>
+                <p>Paypal</p>
+            </div>
+            <div class="payment-method">
+                <i class="fas fa-dollar-sign"></i>
+                <p>Neteller</p>
+            </div>
+            <div class="payment-method">
+                <i class="fas fa-wallet"></i>
+                <p>Skrill</p>
+            </div>
+            <div class="payment-method">
+                <i class="fas fa-rocket"></i>
+                <p>Stellar</p>
+            </div>
+            <div class="payment-method">
+                <i class="fas fa-money-bill-wave"></i>
+                <p>Perfect Money</p>
+            </div>
+            <div class="payment-method">
+                <i class="fas fa-coins"></i>
+                <p>Paxos</p>
+            </div>
+            <div class="payment-method">
+                <i class="fas fa-tether"></i>
+                <p>Tether Usd</p>
+            </div>
+            <div class="payment-method">
+                <i class="fas fa-dice-d20"></i>
+                <p>Tron</p>
+            </div>
+            <div class="payment-method">
+                <i class="fas fa-share-alt"></i>
+                <p>Ripple</p>
+            </div>
+        </div>
+    </div>
+    <div class="containeerrr">
+        <div class="text-section">
+         <h2>
+          We are always ready
+         </h2>
+         <h1>
+          Request a call back
+         </h1>
+         <div class="icons">
+          <a class="icon" href="tel:+1234567890">
+           <i class="fas fa-phone-alt">
+           </i>
+          </a>
+          <a class="icon" href="mailto:info@example.com">
+           <i class="fas fa-comments">
+           </i>
+          </a>
+         </div>
+        </div>
+        <div class="image-section">
+         <img alt="Illustration of a woman holding a coin, two piggy banks, and stacks of coins" height="300" src="https://storage.googleapis.com/a1aa/image/6wnAmzSakxZzN1foe9SOuJnTm40iLdszTEm3JinguRi6EzpTA.jpg" width="500"/>
+        </div>
+       </div>
+       <div class="containrrer">
+        <div class="headerr">
+         Investors Activity
+        </div>
+        <div class="title">
+         Real Time Statistics
+        </div>
+        <div class="subtitle">
+         Fast and easy way to earn money by making secure and safe investments. Our investors real time activity listed below.
+        </div>
+        <div class="buttons">
+         <button class="active" id="depositButton" onclick="showDepositList()">
+          Last Deposit
+         </button>
+         <button id="withdrawButton" onclick="showWithdrawList()">
+          Last Withdraw
+         </button>
+        </div>
+        <div class="table-container">
+         <table id="depositTable">
+          <thead>
+           <tr>
+            <th>
+             Name
+            </th>
+            <th>
+             Date
+            </th>
+            <th>
+             Amount
+            </th>
+            <th>
+             Currency
+            </th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr>
+            <td>
+             <img alt="Profile picture of Lewis Lee" class="profile-pic" height="40" src="https://storage.googleapis.com/a1aa/image/iF8CnK58Z644JFkeBrFdkemstGWSb0leoG31y2SJeYsV1MnOB.jpg" width="40"/>
+             Lewis Lee
+            </td>
+            <td>
+             Nov-3-2021 02:10:59 PM
+            </td>
+            <td>
+             $3600.00
+            </td>
+            <td>
+             <i class="fas fa-coins currency-icon">
+             </i>
+             PM
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <img alt="Profile picture of Tony Pena" class="profile-pic" height="40" src="https://storage.googleapis.com/a1aa/image/ffFIGIIOk8rdn0tuChNVOvM8YWr5XHFq3144nF5yHCuYNzpTA.jpg" width="40"/>
+             Tony Pena
+            </td>
+            <td>
+             Nov-3-2021 02:10:59 PM
+            </td>
+            <td>
+             $500.00
+            </td>
+            <td>
+             <i class="fas fa-coins currency-icon">
+             </i>
+             TRX
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <img alt="Profile picture of Van Oliver" class="profile-pic" height="40" src="https://storage.googleapis.com/a1aa/image/jSoU3eMWjrRXbCbeipU8yqQEIE65Zm4iCSwxW0l5fd2tamTnA.jpg" width="40"/>
+             Van Oliver
+            </td>
+            <td>
+             Nov-3-2021 02:10:29 PM
+            </td>
+            <td>
+             $10,000
+            </td>
+            <td>
+             <i class="fas fa-coins currency-icon">
+             </i>
+             USDT
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table id="withdrawTable" style="display: none;">
+          <thead>
+           <tr>
+            <th>
+             Name
+            </th>
+            <th>
+             Date
+            </th>
+            <th>
+             Amount
+            </th>
+            <th>
+             Currency
+            </th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr>
+            <td>
+             <img alt="Profile picture of John Doe" class="profile-pic" height="40" src="https://storage.googleapis.com/a1aa/image/TG98YW4TtsIvMxJwmsOfAy1eNIJWdAtUGFYWSsEL9zMpOzpTA.jpg" width="40"/>
+             John Doe
+            </td>
+            <td>
+             Nov-3-2021 02:11:00 PM
+            </td>
+            <td>
+             $2000.00
+            </td>
+            <td>
+             <i class="fas fa-coins currency-icon">
+             </i>
+             BTC
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <img alt="Profile picture of Jane Smith" class="profile-pic" height="40" src="https://storage.googleapis.com/a1aa/image/MJBt17SKLCJ5LJxBFTTVtmkREB6UooJBdu2B3rwn14kqzc6E.jpg" width="40"/>
+             Jane Smith
+            </td>
+            <td>
+             Nov-3-2021 02:11:30 PM
+            </td>
+            <td>
+             $1500.00
+            </td>
+            <td>
+             <i class="fas fa-coins currency-icon">
+             </i>
+             ETH
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <img alt="Profile picture of Alice Johnson" class="profile-pic" height="40" src="https://storage.googleapis.com/a1aa/image/NWy30VXfUoyTEKorwtEx7msimYoeIlWGXlpzxOWCLvWmOzpTA.jpg" width="40"/>
+             Alice Johnson
+            </td>
+            <td>
+             Nov-3-2021 02:12:00 PM
+            </td>
+            <td>
+             $750.00
+            </td>
+            <td>
+             <i class="fas fa-coins currency-icon">
+             </i>
+             LTC
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <img alt="Profile picture of Bob Brown" class="profile-pic" height="40" src="https://storage.googleapis.com/a1aa/image/0ukC4ZeVFPTIbKbGlueafTl5Iz8DQhelHdMxc1GKBMLf0ZOdC.jpg" width="40"/>
+             Bob Brown
+            </td>
+            <td>
+             Nov-3-2021 02:12:30 PM
+            </td>
+            <td>
+             $3000.00
+            </td>
+            <td>
+             <i class="fas fa-coins currency-icon">
+             </i>
+             XRP
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <img alt="Profile picture of Charlie Davis" class="profile-pic" height="40" src="https://storage.googleapis.com/a1aa/image/RYPsIeU1kbRIYatBKeftwVNqXX3HJyFUaAcgZnMjit2XdmTnA.jpg" width="40"/>
+             Charlie Davis
+            </td>
+            <td>
+             Nov-3-2021 02:13:00 PM
+            </td>
+            <td>
+             $1200.00
+            </td>
+            <td>
+             <i class="fas fa-coins currency-icon">
+             </i>
+             BCH
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <img alt="Profile picture of David Evans" class="profile-pic" height="40" src="https://storage.googleapis.com/a1aa/image/z9ugt1ggjfWEai7h1vhOx2IPGfuzQUkFj3uJVlyBJQ1kOzpTA.jpg" width="40"/>
+             David Evans
+            </td>
+            <td>
+             Nov-3-2021 02:13:30 PM
+            </td>
+            <td>
+             $900.00
+            </td>
+            <td>
+             <i class="fas fa-coins currency-icon">
+             </i>
+             ADA
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <img alt="Profile picture of Emma Wilson" class="profile-pic" height="40" src="https://storage.googleapis.com/a1aa/image/URD5ffnQiEg9AU6CD7tvxgpUas56lqGlVIChEztxgomtOzpTA.jpg" width="40"/>
+             Emma Wilson
+            </td>
+            <td>
+             Nov-3-2021 02:14:00 PM
+            </td>
+            <td>
+             $5000.00
+            </td>
+            <td>
+             <i class="fas fa-coins currency-icon">
+             </i>
+             DOT
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <img alt="Profile picture of Frank Green" class="profile-pic" height="40" src="https://storage.googleapis.com/a1aa/image/1k2f3g4h5i6j7k8l9m0n1o2p3q4r5s6t7u8v9w0x1y2z3a4b5c.jpg" width="40"/>
+             Frank Green
+            </td>
+            <td>
+             Nov-3-2021 02:14:30 PM
+            </td>
+            <td>
+             $4000.00
+            </td>
+            <td>
+             <i class="fas fa-coins currency-icon">
+             </i>
+             SOL
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <img alt="Profile picture of Grace Harris" class="profile-pic" height="40" src="https://storage.googleapis.com/a1aa/image/2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w4x5y6z.jpg" width="40"/>
+             Grace Harris
+            </td>
+            <td>
+             Nov-3-2021 02:15:00 PM
+            </td>
+            <td>
+             $2500.00
+            </td>
+            <td>
+             <i class="fas fa-coins currency-icon">
+             </i>
+             AVAX
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <img alt="Profile picture of Henry Clark" class="profile-pic" height="40" src="https://storage.googleapis.com/a1aa/image/3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w4x5y6z7a.jpg" width="40"/>
+             Henry Clark
+            </td>
+            <td>
+             Nov-3-2021 02:15:30 PM
+            </td>
+            <td>
+             $3500.00
+            </td>
+            <td>
+             <i class="fas fa-coins currency-icon">
+             </i>
+             MATIC
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <img alt="Profile picture of Ian White" class="profile-pic" height="40" src="https://storage.googleapis.com/a1aa/image/4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w4x5y6z7a8b.jpg" width="40"/>
+             Ian White
+            </td>
+            <td>
+             Nov-3-2021 02:16:00 PM
+            </td>
+            <td>
+             $1800.00
+            </td>
+            <td>
+             <i class="fas fa-coins currency-icon">
+             </i>
+             LINK
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <img alt="Profile picture of Jack Black" class="profile-pic" height="40" src="https://storage.googleapis.com/a1aa/image/5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w4x5y6z7a8b9c.jpg" width="40"/>
+             Jack Black
+            </td>
+            <td>
+             Nov-3-2021 02:16:30 PM
+            </td>
+            <td>
+             $2200.00
+            </td>
+            <td>
+             <i class="fas fa-coins currency-icon">
+             </i>
+             UNI
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <img alt="Profile picture of Karen Blue" class="profile-pic" height="40" src="https://storage.googleapis.com/a1aa/image/6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w4x5y6z7a8b9c0d.jpg" width="40"/>
+             Karen Blue
+            </td>
+            <td>
+             Nov-3-2021 02:17:00 PM
+            </td>
+            <td>
+             $2700.00
+            </td>
+            <td>
+             <i class="fas fa-coins currency-icon">
+             </i>
+             AAVE
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <img alt="Profile picture of Laura Green" class="profile-pic" height="40" src="https://storage.googleapis.com/a1aa/image/7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w4x5y6z7a8b9c0d1e.jpg" width="40"/>
+             Laura Green
+            </td>
+            <td>
+             Nov-3-2021 02:17:30 PM
+            </td>
+            <td>
+             $3200.00
+            </td>
+            <td>
+             <i class="fas fa-coins currency-icon">
+             </i>
+             SUSHI
+            </td>
+           </tr>
+           <tr>
+            <td>
+             <img alt="Profile picture of Mike Brown" class="profile-pic" height="40" src="https://storage.googleapis.com/a1aa/image/8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w4x5y6z7a8b9c0d1e2f.jpg" width="40"/>
+             Mike Brown
+            </td>
+            <td>
+             Nov-3-2021 02:18:00 PM
+            </td>
+        </div>
+        
+        
+
+
+
+       </div>
+       
+<script src="investment.js"></script>
+</body>
+</html>

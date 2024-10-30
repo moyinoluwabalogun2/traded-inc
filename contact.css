@@ -1,0 +1,232 @@
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* Adjusted height */
+}
+.hero .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .hero .text {
+        font-size: 36px;
+    }
+}
+@media (max-width: 480px) {
+    .hero .text {
+        font-size: 24px;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color:#0a0a23;
+}
+
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+}
+.left, .right {
+    width: 100%;
+    margin-bottom: 20px;
+}
+@media(min-width: 768px) {
+    .left, .right {
+        width: 45%;
+        margin-bottom: 0;
+    }
+}
+h1 {
+    font-size: 36px;
+    color: #0a0a23;
+}
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+.contact-info h2 {
+    font-size: 24px;
+    color: #0a0a23;
+    margin-top: 20px;
+}
+.contact-info p {
+    margin: 5px 0;
+}
+.contact-info a {
+    color: #d4a017;
+    text-decoration: none;
+}
+.contact-form h1 {
+    font-size: 36px;
+    color: #0a0a23;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.contact-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.contact-form .send {
+    background-color: #d4a017;
+    color: #fff;
+    width: 150px;
+}
+.contact-form .reset {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    width: 100px;
+}
+
+
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background-color: #0b0b3b;
+    margin-top: 150px;
+}
+.footer div {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+    color:white;
+}
+.footer h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color:white;
+}
+.footer p {
+    font-size: 14px;
+    line-height: 1.6;
+    color:white;
+}
+.footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.footer .recent-posts img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.footer .recent-posts .post {
+    display: flex;
+    margin-bottom: 10px;
+}
+.footer .recent-posts .post p {
+    margin: 0;
+}
+.footer .recent-posts .post small {
+    display: block;
+    color: #999999;
+}
+.footer .contact-us ul {
+    list-style: none;
+    padding: 0;
+
+}
+.footer .contact-us ul li {
+    margin-bottom: 10px;
+}
+.footer .contact-us ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+.footer .contact-us ul li i {
+    margin-right: 10px;
+}
+
+.bottom-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+
+    border-top: 1px solid #444;
+    flex-wrap: wrap
+}
+.bottom-bar .leftie{
+    font-size: 14px;
+            margin-bottom: 10px
+}
+.bottom-bar .leftie a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.bottom-bar .rightie{
+    display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+}
+.bottom-bar .rightie span{
+    margin-right: 10px;
+    font-size: 14px;
+
+} 
+.bottom-bar .rightie a {
+    color: #ffffff;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.bottom-bar .rightie a i {
+    font-size: 16px;
+    background-color: #3b3b5c;
+    padding: 8px;
+    border-radius: 5px;
+}
+.bottom-bar .rightie a:last-child {
+    margin-right: 0;
+}
+@media (max-width: 600px) {
+    .bottom-bar {
+        padding: 20px;
+        text-align: center;
+    }
+    .bottom-bar .leftiie, .bottom-bar .rightie {
+        width: 100%;
+        justify-content: center;
+    }
+    .bottom-bar .rightie span {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .bottom-bar .rightie a {
+        margin-right: 5px;
+    }
+}
